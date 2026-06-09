@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-principal: #3b82f6;
+    --cor-fundo: #0f172a;
+    --cor-card: #1e293b;
+    --cor-texto: #ffffff;
+    --cor-texto-secundario: #94a3b8;
+    --foto-perfil: 150px;
+}
+body{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    min-height: 100vh;
+    
+}
+
+
+.card{
+    width: var(--largura-card);
+    border-radius: 10px;
+    box-shadow: 0 0 15px  var(--cor-texto-secundario);
+    padding: 20px;
+    min-width: 300px;
+    height: 500px;
+    background-color:  var(--cor-card);
+    color: var(--cor-texto);
+    text-align: center;
+    
+    }
+    .titlePortifolio h1{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+        font-size: 2.1rem;
+        
+    }
+
+.fotoperfil{
+    margin-top: 15px;
+}
+.fotoperfil img{
+    width:  var(--foto-perfil);
+    height: var(--foto-perfil);
+    border-radius: 50%;
+    border: 2px solid var(--cor-principal);
+    box-shadow: 0 0 20px var(--cor-principal);
+    object-fit:cover;
+
+}
+.status{
+    margin-top: 5px;
+}
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.botaoacao button{
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: 0.25s;
+
+}
+.botaoacao{
+    margin-top: 20px;
+}
+.botaoacao button:hover{
+    background-color: darkgreen;
+    transform: scale(1.05);
+
+}
+
+.nomeCargo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nome h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--cor-texto);
+
+}
+
+.cargo p{
+    font-size: 1rem;
+    color: var(--cor-texto-secundario);
+    font-size: 1.2rem;
+}
+
+/*.verso{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}*/
+.projetos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.verso h2{
+    margin: 10px;
+}
+.verso button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border-bottom: 1px solid var(--cor-principal);
+    color: var(--cor-texto);
+    cursor: pointer;
+    transition: 0.25s;
+    margin-bottom: 10px;
+    
+}
+.verso button:hover{
+    transform: scale(1.02);
+    background-color: var(--cor-principal);
+}
+.buttonlado2{
+    background-color: var(--cor-principal);
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+
